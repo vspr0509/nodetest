@@ -41,6 +41,7 @@ http
     const headers = { "Content-Type": mimeType };
     if(["jpg", "png", "gif", "svg"].includes(file.ext)) {
       headers["Access-Control-Allow-Origin"] = "https://developer.mozilla.org";
+      headers["Cross-Origin-Resource-Policy"] = "same-origin";
     }
     res.writeHead(statusCode, headers);
     file.stream.pipe(res);
