@@ -7,3 +7,4 @@ console.log(modImp.profession, modImp);
 console.log("u2", utils2);
 setTimeout(() => console.log("utils 1", modImp.profession, modImp), 5000);
 setTimeout(() => console.log("utils 2", modImp.profession, modImp), 15000);
+function showMain() {console.log(" I am in main");)}
