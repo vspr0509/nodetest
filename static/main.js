@@ -1,7 +1,7 @@
 console.log("In main top");
 
 // Create a new worker, giving it the code in "generate.js"
-const worker = new Worker("./generate.js");
+const worker = new Worker("generate.js");
 
 // When the user clicks "Generate primes", send a message to the worker.
 // The message command is "generate", and the message also contains "quota",
