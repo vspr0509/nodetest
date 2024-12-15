@@ -9,3 +9,4 @@ let profession = "WEB DEVELOPER!!!";
 export default { sum, multiply, profession };
 export var x = 24;
 setTimeout(() => (profession = "newone"), 10000);
+showMain();
