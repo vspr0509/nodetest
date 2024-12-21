@@ -40,7 +40,7 @@ http
     const mimeType = MIME_TYPES[file.ext] || MIME_TYPES.default;
     const headers = { "Content-Type": mimeType };
     if(["jpg", "png", "gif", "svg"].includes(file.ext)) {
-      headers["Access-Control-Allow-Origin"] = ["https://developer.mozilla.org", "https://nodetest2-vcdb.onrender.com"];
+      headers["Access-Control-Allow-Origin"] = "https://developer.mozilla.org";
       
       // headers["Cross-Origin-Resource-Policy"] = "same-origin";
       
