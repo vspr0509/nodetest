@@ -16,7 +16,7 @@
 
     <img src="narc.jpg" crossorigin />
 <script>
-  var response, response2, response3, response4;
+  var response, response2, response3, response4, response5, response6;
 setTimeout(async() => {
   response = await fetch("error.jpg", {
   method: "POST",
@@ -46,8 +46,13 @@ setTimeout(async() => {
     credentials: "include",
   body: JSON.stringify({name: "JOHN"}),
 });
+   response5 = await fetch("https://nodetest2-vcdb.onrender.com/cors-test-2.jpg", {
+  method: "GET",
+    mode: "no-cors",
+    credentials: "include",
+});
 try  {
-   window.response5 = await fetch("main.js", {
+   response6 = await fetch("main.js", {
   method: "POST",
     mode: "no-cors",
   body: JSON.stringify({name: "JOHN"}),
