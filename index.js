@@ -40,7 +40,7 @@ http
     const mimeType = MIME_TYPES[file.ext] || MIME_TYPES.default;
     const headers = { "Content-Type": mimeType };
     // if(["jpg", "png", "gif", "svg"].includes(file.ext)) {
-      headers["Access-Control-Allow-Origin"] = "*";
+      headers["Access-Control-Allow-Origin"] = "https://939fcc21-a48a-40d5-99e7-b5f925c75814.mdnplay.dev";
       
       // headers["Cross-Origin-Resource-Policy"] = "same-origin";
       
