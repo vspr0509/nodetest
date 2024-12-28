@@ -18,24 +18,28 @@ setTimeout(async() => {
   method: "POST",
     mode: "cors",
   body: JSON.stringify({name: "JOHN"}),
+    credentials: "include",
     headers: {"Content-Type": "application/json"}
 });
   
   response2 = await fetch("cors-test-2.jpg", {
   method: "POST",
     mode: "no-cors",
+    credentials: "include",
   body: JSON.stringify({name: "JOHN"}),
 });
   
   response3 = await fetch("index.html", {
   method: "PUT",
   body: JSON.stringify({name: "JOHN"}),
+    credentials: "include",
     headers: {"Content-Type": "application/json"}
 });
   
   response4 = await fetch("https://nodetest2-vcdb.onrender.com/cors-test.jpg", {
   method: "POST",
     mode: "no-cors",
+    credentials: "include",
   body: JSON.stringify({name: "JOHN"}),
 });
 try  {
@@ -43,6 +47,7 @@ try  {
   method: "POST",
     mode: "no-cors",
   body: JSON.stringify({name: "JOHN"}),
+     credentials: "include",
      headers: {"Content-Type": "application/json"}
 });
 } catch(e) {console.log("fetcherr", e);}
