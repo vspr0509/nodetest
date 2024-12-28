@@ -21,13 +21,13 @@ setTimeout(async() => {
     headers: {"Content-Type": "application/json"}
 });
   
-  response2 = await fetch("cors-test.jpg", {
+  response2 = await fetch("cors-test-2.jpg", {
   method: "POST",
     mode: "no-cors",
   body: JSON.stringify({name: "JOHN"}),
 });
   
-  response3 = await fetch("cors-test.jpg", {
+  response3 = await fetch("index.html", {
   method: "PUT",
   body: JSON.stringify({name: "JOHN"}),
     headers: {"Content-Type": "application/json"}
@@ -39,7 +39,7 @@ setTimeout(async() => {
   body: JSON.stringify({name: "JOHN"}),
 });
 try  {
-   window.response5 = await fetch("cors-test.jpg", {
+   window.response5 = await fetch("main.js", {
   method: "POST",
     mode: "no-cors",
   body: JSON.stringify({name: "JOHN"}),
