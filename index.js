@@ -43,7 +43,7 @@ http
       // headers["Access-Control-Allow-Origin"] = "https://939fcc21-a48a-40d5-99e7-b5f925c75814.mdnplay.dev";
     headers["Access-Control-Allow-Origin"] = "http://localhost:8005";
       headers["Cross-Origin-Embedder-Policy"] = "unsafe-none";
-      // headers["Cross-Origin-Resource-Policy"] = "same-origin";
+      headers["Cross-Origin-Resource-Policy"] = "same-origin";
       
     // }
     res.writeHead(statusCode, headers);
