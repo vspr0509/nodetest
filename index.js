@@ -44,7 +44,7 @@ http
     headers["Permissions-Policy"] = 'fullscreen=("https://trusted-ad-network.com")';
     headers["Access-Control-Allow-Origin"] = "http://localhost:8005";
       headers["Cross-Origin-Embedder-Policy"] = "unsafe-none";
-      headers["Cross-Origin-Resource-Policy"] = "same-origin";
+      // headers["Cross-Origin-Resource-Policy"] = "same-origin";
       
     // }
     res.writeHead(statusCode, headers);
